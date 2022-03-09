@@ -1,0 +1,21 @@
+USE [TicketsApi]
+GO
+
+/****** Object:  Table [dbo].[Status]    Script Date: 9/03/2022 2:39:17 p. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Status](
+	[IdStatus] [int] IDENTITY(1,1) NOT NULL,
+	[Status] [nvarchar](20) NOT NULL,
+ CONSTRAINT [PK_Status] PRIMARY KEY CLUSTERED 
+(
+	[IdStatus] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
